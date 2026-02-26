@@ -13,6 +13,13 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "next",
     "@mui/material": "next",
+    "@mui/x-charts": "^8.27.0",
+    "@mui/x-data-grid": "^8.27.3",
+    "@mui/x-date-pickers": "^8.27.2",
+    "@mui/x-tree-view": "^8.27.2",
+    "@react-spring/web": "^10.0.3",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.19",
     "react": "latest",
     "react-dom": "latest"
   },
