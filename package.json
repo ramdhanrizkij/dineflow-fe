@@ -11,10 +11,12 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@fontsource/inter": "^5.2.8",
     "@mui/icons-material": "next",
     "@mui/material": "next",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-router-dom": "^7.13.1"
   },
   "devDependencies": {
     "@types/react": "latest",
