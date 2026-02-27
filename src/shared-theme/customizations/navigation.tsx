@@ -3,6 +3,7 @@ import { Theme, alpha, Components } from '@mui/material/styles';
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import { buttonBaseClasses } from '@mui/material/ButtonBase';
 import { dividerClasses } from '@mui/material/Divider';
+import { listItemButtonClasses } from '@mui/material/ListItemButton';
 import { menuItemClasses } from '@mui/material/MenuItem';
 import { selectClasses } from '@mui/material/Select';
 import { tabClasses } from '@mui/material/Tab';
@@ -11,6 +12,26 @@ import { gray, brand } from '../themePrimitives';
 
 /* eslint-disable import/prefer-default-export */
 export const navigationCustomizations: Components<Theme> = {
+  MuiListItemButton: {
+    styleOverrides: {
+      root: ({ theme }) => ({
+        [`&.${listItemButtonClasses.selected}`]: {
+          backgroundColor: `${brand[400]} !important`,
+          color: '#fff !important',
+          borderRadius: (theme.vars || theme).shape.borderRadius,
+          '& .MuiListItemIcon-root': {
+            color: '#fff !important',
+          },
+          '& .MuiSvgIcon-root': {
+            color: '#fff !important',
+          },
+          '&:hover': {
+            backgroundColor: `${brand[700]} !important`,
+          },
+        },
+      }),
+    },
+  },
   MuiMenuItem: {
     styleOverrides: {
       root: ({ theme }) => ({

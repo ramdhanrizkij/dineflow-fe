@@ -41,8 +41,12 @@ export default function Dashboard(props: { disableCustomTheme?: boolean }) {
               ? `rgba(${theme.vars.palette.background.defaultChannel} / 1)`
               : alpha(theme.palette.background.default, 1),
             overflow: 'auto',
+            height: '100dvh',
+            display: 'flex',
+            flexDirection: 'column',
           })}
         >
+          <Header />
           <Stack
             spacing={2}
             sx={{
@@ -50,9 +54,9 @@ export default function Dashboard(props: { disableCustomTheme?: boolean }) {
               mx: 3,
               pb: 5,
               mt: { xs: 8, md: 0 },
+              width: 'auto',
             }}
           >
-            <Header />
             <MainGrid />
           </Stack>
         </Box>
