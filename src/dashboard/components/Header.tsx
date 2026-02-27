@@ -73,8 +73,7 @@ export default function Header() {
             borderLeft: '1px solid',
             borderColor: 'divider',
             cursor: 'pointer',
-            borderRadius: 2,
-            '&:hover': { opacity: 0.8 },
+           
           }}
         >
           <Avatar
